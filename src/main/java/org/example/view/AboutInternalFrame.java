@@ -14,7 +14,6 @@ import java.awt.*;
 public class AboutInternalFrame extends JInternalFrame {
 
     public AboutInternalFrame() {
-//        getContentPane().setBackground(Color.RED);
         setIconifiable(true);
         setClosable(true);
         setTitle("关于Java");

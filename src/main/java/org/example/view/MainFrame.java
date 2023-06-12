@@ -55,9 +55,9 @@ public class MainFrame extends JFrame {
         // 1.1.1.顾客添加
         JMenuItem menuItem = new JMenuItem("顾客添加");
         menuItem.addActionListener(e -> {
-            CustomerAddInternalFrame bookTypeAddInterFrm = new CustomerAddInternalFrame();
-            bookTypeAddInterFrm.setVisible(true);
-            table.add(bookTypeAddInterFrm);
+            CustomerAddInternalFrame customerAddInternalFrame = new CustomerAddInternalFrame();
+            customerAddInternalFrame.setVisible(true);
+            table.add(customerAddInternalFrame);
         });
         menuItem.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/add.png"))));
         mnNewMenu1.add(menuItem);
@@ -65,9 +65,9 @@ public class MainFrame extends JFrame {
         // 1.1.2.顾客维护
         JMenuItem menuItem1 = new JMenuItem("顾客维护");
         menuItem1.addActionListener(e -> {
-            AboutInternalFrame bookTypeManageInterFrm=new AboutInternalFrame();
-            bookTypeManageInterFrm.setVisible(true);
-            table.add(bookTypeManageInterFrm);
+            CustomerManageInternalFrame customerManageInternalFrame = new CustomerManageInternalFrame();
+            customerManageInternalFrame.setVisible(true);
+            table.add(customerManageInternalFrame);
         });
         menuItem1.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png"))));
         mnNewMenu1.add(menuItem1);
@@ -101,7 +101,7 @@ public class MainFrame extends JFrame {
         JMenuItem menuItemExit = new JMenuItem("安全退出");
         menuItemExit.addActionListener(e -> {
             int result=JOptionPane.showConfirmDialog(null, "是否退出系统");
-            if(result==0){
+            if(result == 0){
                 dispose();
                 setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             }

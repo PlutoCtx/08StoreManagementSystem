@@ -126,7 +126,7 @@ public class CustomerAddInternalFrame extends JInternalFrame {
             JOptionPane.showMessageDialog(null, "顾客名称不能为空！");
             return;
         }
-        Customer customer = new Customer(VIPNumber, customerName,customerDesc);
+        Customer customer = new Customer(VIPNumber, customerName, customerDesc);
         Connection con = null;
         try{
             con = dbUtil.getConnection();

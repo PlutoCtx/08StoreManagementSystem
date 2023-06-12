@@ -65,12 +65,17 @@ public class Customer {
     public Customer() {
     }
 
+    public Customer(int id, String name, String phone) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+    }
+
     public Customer(String VIPNumber, String name, String phone) {
         this.VIPNumber = VIPNumber;
         this.name = name;
         this.phone = phone;
     }
-
     public Customer(int id, String VIPNumber, String name, String phone) {
         this.id = id;
         this.VIPNumber = VIPNumber;
