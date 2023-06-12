@@ -50,6 +50,11 @@ public class Salesperson {
     public Salesperson() {
     }
 
+    public Salesperson(String workNumber, String name){
+        this.workNumber = workNumber;
+        this.name = name;
+    }
+
     public Salesperson(int id, String workNumber, String name) {
         this.id = id;
         this.workNumber = workNumber;
