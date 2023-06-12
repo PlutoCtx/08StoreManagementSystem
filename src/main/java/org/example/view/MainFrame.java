@@ -17,7 +17,7 @@ import java.util.Objects;
 public class MainFrame extends JFrame {
 
     private JPanel contentPane;
-    private JDesktopPane table =null;
+    private JDesktopPane table = null;
 
 
     /**
@@ -44,22 +44,22 @@ public class MainFrame extends JFrame {
 
         // 1.基本数据维护
         JMenu mnNewMenu = new JMenu("基本数据维护");
-//        mnNewMenu.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/base.png"))));
+        mnNewMenu.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/base.png"))));
         menuBar.add(mnNewMenu);
 
         // 1.1.顾客管理
         JMenu mnNewMenu1 = new JMenu("顾客管理");
-//        mnNewMenu1.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/bookTypeManager.png"))));
+        mnNewMenu1.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/bookTypeManager.png"))));
         mnNewMenu.add(mnNewMenu1);
 
         // 1.1.1.顾客添加
         JMenuItem menuItem = new JMenuItem("顾客添加");
         menuItem.addActionListener(e -> {
-            AboutInternalFrame bookTypeAddInterFrm = new AboutInternalFrame();
+            CustomerAddInternalFrame bookTypeAddInterFrm = new CustomerAddInternalFrame();
             bookTypeAddInterFrm.setVisible(true);
             table.add(bookTypeAddInterFrm);
         });
-//        menuItem.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/add.png"))));
+        menuItem.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/add.png"))));
         mnNewMenu1.add(menuItem);
 
         // 1.1.2.顾客维护
@@ -69,12 +69,12 @@ public class MainFrame extends JFrame {
             bookTypeManageInterFrm.setVisible(true);
             table.add(bookTypeManageInterFrm);
         });
-//        menuItem1.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png"))));
+        menuItem1.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png"))));
         mnNewMenu1.add(menuItem1);
 
         // 1.2.商品管理
         JMenu mnNewMenu2 = new JMenu("商品管理");
-//        mnNewMenu2.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/bookManager.png"))));
+        mnNewMenu2.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/bookManager.png"))));
         mnNewMenu.add(mnNewMenu2);
 
         // 1.2.1.商品添加
@@ -84,7 +84,7 @@ public class MainFrame extends JFrame {
             bookAddInterFrm.setVisible(true);
             table.add(bookAddInterFrm);
         });
-//        menuItem2.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/add.png"))));
+        menuItem2.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/add.png"))));
         mnNewMenu2.add(menuItem2);
 
         // 1.2.2.商品维护
@@ -94,7 +94,7 @@ public class MainFrame extends JFrame {
             bookManageInterFrm.setVisible(true);
             table.add(bookManageInterFrm);
         });
-//        menuItem3.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png"))));
+        menuItem3.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png"))));
         mnNewMenu2.add(menuItem3);
 
         // 1.3.安全退出
@@ -106,12 +106,12 @@ public class MainFrame extends JFrame {
                 setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             }
         });
-//        menuItemExit.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/exit.png"))));
+        menuItemExit.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/exit.png"))));
         mnNewMenu.add(menuItemExit);
 
         // 2.关于我们
         JMenu menu = new JMenu("关于我们");
-//        menu.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/about.png"))));
+        menu.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/about.png"))));
         menuBar.add(menu);
 
         // 2.1关于Java
@@ -121,7 +121,7 @@ public class MainFrame extends JFrame {
             java1234InterFrm.setVisible(true);
             table.add(java1234InterFrm);
         });
-//        jMenuItem.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/about.png"))));
+        jMenuItem.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/about.png"))));
         menu.add(jMenuItem);
 
 
