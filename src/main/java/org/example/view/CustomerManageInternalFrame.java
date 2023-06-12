@@ -33,7 +33,6 @@ public class CustomerManageInternalFrame extends JInternalFrame {
     private final JTextArea customerDescTxt ;
     private final DBUtil dbUtil = new DBUtil();
     private final CustomerDao customerDao = new CustomerDao();
-//    private final BookDao bookDao = new BookDao();
     private final JTextField s_customerNameTxt;
     private final JTextField idTxt;
     private final JTextField customerNameTxt;

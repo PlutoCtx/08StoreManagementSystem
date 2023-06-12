@@ -1,6 +1,5 @@
 package org.example.view;
 
-import org.example.Main;
 import org.example.dao.SalespersonDao;
 import org.example.entity.Salesperson;
 import org.example.utils.DBUtil;
