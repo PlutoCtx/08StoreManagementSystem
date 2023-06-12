@@ -26,4 +26,17 @@ public class GoodsDao {
         return preparedStatement.executeUpdate();
 
     }
+
+    public static int update(Connection conn, Goods goods) throws SQLException {
+        String sql="UPDATE goods SET storeNumber = ?, storeName = ?, model = ?, price = ? WHERE id = ?";
+        PreparedStatement preparedStatement = conn.prepareStatement(sql);
+        preparedStatement.setString(1, goods.getStoreNumber());
+        preparedStatement.setString(2, goods.getStoreName());
+        preparedStatement.setString(3, goods.getModel());
+        preparedStatement.setDouble(4, goods.getPrice());
+        preparedStatement.setInt(5, goods.getId());
+        return preparedStatement.executeUpdate();
+
+
+    }
 }

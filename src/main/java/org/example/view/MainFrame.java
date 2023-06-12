@@ -90,9 +90,9 @@ public class MainFrame extends JFrame {
         // 1.2.2.商品维护
         JMenuItem menuItem3 = new JMenuItem("商品维护");
         menuItem3.addActionListener(arg0 -> {
-            AboutInternalFrame bookManageInterFrm=new AboutInternalFrame();
-            bookManageInterFrm.setVisible(true);
-            table.add(bookManageInterFrm);
+            GoodsManageInternalFrame goodsAddInternalFrame = new GoodsManageInternalFrame();
+            goodsAddInternalFrame.setVisible(true);
+            table.add(goodsAddInternalFrame);
         });
         menuItem3.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png"))));
         mnNewMenu2.add(menuItem3);

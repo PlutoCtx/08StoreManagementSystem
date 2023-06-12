@@ -1,19 +1,14 @@
 package org.example.view;
 
-import org.example.dao.CustomerDao;
 import org.example.dao.GoodsDao;
-import org.example.entity.Customer;
 import org.example.entity.Goods;
 import org.example.utils.DBUtil;
 import org.example.utils.StringUtil;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import java.awt.event.ActionEvent;
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 /**
  * StoreManagementSystem
