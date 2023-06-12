@@ -29,13 +29,20 @@ public class Goods {
     /**
      * 单价
      */
-    String price;
+    double price;
 
     public Goods() {
     }
 
-    public Goods(int id, String storeNumber, String storeName, String model, String price) {
+    public Goods(int id, String storeNumber, String storeName, String model, double price) {
         this.id = id;
+        this.storeNumber = storeNumber;
+        this.storeName = storeName;
+        this.model = model;
+        this.price = price;
+    }
+
+    public Goods( String storeNumber, String storeName, String model, double price) {
         this.storeNumber = storeNumber;
         this.storeName = storeName;
         this.model = model;
@@ -74,11 +81,11 @@ public class Goods {
         this.model = model;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }

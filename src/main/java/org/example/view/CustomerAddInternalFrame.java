@@ -43,7 +43,7 @@ public class CustomerAddInternalFrame extends JInternalFrame {
         JLabel lblVIPNumber = new JLabel("会员编号：");
         JLabel lblCustomName = new JLabel("顾客名称：");
 
-        JLabel lblNewLabel1 = new JLabel("顾客描述：");
+        JLabel lblContact = new JLabel("联系方式：");
 
         VIPNumberTxt = new JTextField();
         VIPNumberTxt.setColumns(10);
@@ -77,7 +77,7 @@ public class CustomerAddInternalFrame extends JInternalFrame {
                                                 .addComponent(customerNameTxt, GroupLayout.PREFERRED_SIZE, 185, GroupLayout.PREFERRED_SIZE))
                                         .addGroup(groupLayout.createSequentialGroup()
                                                 .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                                        .addComponent(lblNewLabel1)
+                                                        .addComponent(lblContact)
                                                         .addComponent(btnNewButton))
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -98,7 +98,7 @@ public class CustomerAddInternalFrame extends JInternalFrame {
                                         .addComponent(customerNameTxt, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                                 .addGap(29)
                                 .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblNewLabel1)
+                                        .addComponent(lblContact)
                                         .addComponent(customerDescTxt, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                                 .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)

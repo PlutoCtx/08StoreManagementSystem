@@ -80,9 +80,9 @@ public class MainFrame extends JFrame {
         // 1.2.1.商品添加
         JMenuItem menuItem2 = new JMenuItem("商品添加");
         menuItem2.addActionListener(arg0 -> {
-            AboutInternalFrame bookAddInterFrm=new AboutInternalFrame();
-            bookAddInterFrm.setVisible(true);
-            table.add(bookAddInterFrm);
+            GoodsAddInternalFrame goodsAddInternalFrame = new GoodsAddInternalFrame();
+            goodsAddInternalFrame.setVisible(true);
+            table.add(goodsAddInternalFrame);
         });
         menuItem2.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource("/add.png"))));
         mnNewMenu2.add(menuItem2);
